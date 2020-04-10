@@ -6,7 +6,11 @@
 		Published on {{ page.date | date: "%B %-d, %Y %-l:%M %p" }}.
 	</div>
 	<div class="post-date" style="margin-top:20px">
-		Edited on {{ page.last_modified_at | date: "%B %-d, %Y %-l:%M %p" }}.
+		{%- if page.last_modified_at -%}
+    		Last updated: {%- page.last_modified_at | date: "%B %-d, %Y %-l:%M %p" -%}
+		{%- else -%}
+    		Last updated: {%- page.date | date: "%B %-d, %Y %-l:%M %p" -%}
+		{%- endif -%}
 	</div>
 	<ul class="post-tags">
 		{%- for tag in page.categories -%}
