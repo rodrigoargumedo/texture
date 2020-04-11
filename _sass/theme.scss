@@ -11,6 +11,7 @@ $leftWidth: 220px;
 
 $gray: #999;
 $lightGray: #eee;
+$custom-color: #A61E46;
 
 *,*:before,*:after {
 	box-sizing: border-box;
@@ -26,7 +27,7 @@ body {
 }
 
 a {
-	color: $linkColor;
+	color: $custom-color;
 	text-decoration: none;
 	transition: border-bottom 0.4s;
 	&:hover {
@@ -220,9 +221,6 @@ header {
 .post-container {
 	img {
 		margin: 20px 0;
-	}
-	a {
-		color: #A61E46;
 	}
 }
 
