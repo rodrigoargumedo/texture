@@ -4,9 +4,9 @@
 	<h4 class="post-description">{{ page.description }}</h4>
 	<div class="post-date" style="margin-top:20px">
 		{%- if page.last_modified_at -%}
-    		Last updated: {{ page.last_modified_at | date: "%B %-d, %Y %-l:%M %p" }}
+    		Last updated: {{ page.last_modified_at | date: "%B %-d, %Y %-l:%M %p" }}.
 		{%- else -%}
-    		Last updated: {{ page.date | date: "%B %-d, %Y %-l:%M %p" }}
+    		Last updated: {{ page.date | date: "%B %-d, %Y %-l:%M %p" }}.
 		{%- endif -%}
 	</div>
 	<ul class="post-tags">
